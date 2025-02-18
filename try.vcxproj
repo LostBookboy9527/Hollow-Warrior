@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b9741146-2d79-44a3-8b31-3125b8e9f7f2}</ProjectGuid>
+    <RootNamespace>try</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\audio_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\barb.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\bullet_time_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\character.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\character_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\collision_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\effect.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\enemy_dragon_king.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\enemy_dragon_king_state_node.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\enemy_hornet.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\enemy_hornet_state_node.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\fire_bullet.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\main.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\particle_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\player.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\player_state_node.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\resources_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\reverse_time_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\scene_game.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\scene_manager.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\state_machine.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\status_bar.cpp" />
+    <ClCompile Include="D:\浏览器Download\空洞武士\源代码\sword.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\animation.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\atlas.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\audio_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\barb.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\bullet_time_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\camera.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\character.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\character_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\collision_box.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\collision_layer.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\collision_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\effect.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\enemy_dragon_king.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\enemy_dragon_king_state_node.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\enemy_hornet.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\enemy_hornet_state_node.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\fire_bullet.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\particle_effect.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\particle_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\player.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\player_state_node.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\resources_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\reverse_time_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene_game.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene_game_boss_dragon_king.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene_game_boss_hornet.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene_game_reverse_time.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene_manager.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\scene_menu.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\state_machine.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\state_node.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\status_bar.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\sword.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\timer.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\util.h" />
+    <ClInclude Include="D:\浏览器Download\空洞武士\源代码\vector2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\barb_break.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\bgm_0.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\bgm_1.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\bgm_2.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\bullet_time.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\dash.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\electric.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_dash.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_hurt_1.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_hurt_2.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_hurt_3.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_run.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_throw_barbs.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_throw_silk.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\enemy_throw_sword.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\fall.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\fire.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\fire_bullet.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\hornet_dead.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\hornet_dialogue.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\hornet_final_yell.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\hornet_say_dash.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\hornet_say_throw_silk.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\hornet_say_throw_sword.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\jump.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\land.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_attack_1.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_attack_2.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_attack_3.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_dead.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_hurt.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_jump.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_land.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_roll.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\player_run.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\play_tape.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\reverse_time.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\run_loop.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\sword_hit_1.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\sword_hit_2.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\sword_hit_3.mp3" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\ui_confirm.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\ui_switch.wav" />
+    <Media Include="D:\浏览器Download\空洞武士\resources\audio\wind.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="D:\浏览器Download\空洞武士\resources\background_1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\background_2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric_right\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric_right\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric_right\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric_right\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\electric_right\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_bullet\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\fire_dash_down\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hit\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hit\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hit\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hit\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\14.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\15.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\16.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\17.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\18.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\hurt\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\14.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\15.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\16.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\17.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\18.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\19.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\leaves\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\mixed_image\blue_1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\mixed_image\blue_2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\mixed_image\red.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\mixed_image\test_background_black.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\mixed_image\test_background_blue_1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\mixed_image\test_background_blue_2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\bug\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\14.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\15.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\16.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\light\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\little_knight\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\little_knight\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\little_knight\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\little_knight\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\other\little_knight\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\ui_choose\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\watercolor\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\watercolor\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\watercolor\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\watercolor\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\watercolor\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\effect\watercolor\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\attack\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\fall\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\idle\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\jump\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\jump\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\jump\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\jump\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\prepare\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\prepare\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\run\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\dash_line.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\dash_tail.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\vfx_attack_down.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\vfx_attack_left.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\vfx_attack_right.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\vfx_attack_up.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\dragon_king\vfx\图层 1 拷贝.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\aim\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_break\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_break\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_break\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_loose\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_loose\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_loose\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_loose\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\barb_loose\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\dash_in_air\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\dash_in_air\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\dash_on_floor\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\dash_on_floor\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\fall\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\fall\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\fall\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\fall\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\idle\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\idle\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\idle\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\idle\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\idle\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\idle\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\jump\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\run\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\silk\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\squat\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\sword\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\sword\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\sword\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_barb\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\14.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\15.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\16.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\17.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_silk\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\13.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\14.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\15.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\16.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\throw_sword\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_in_air\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_in_air\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_in_air\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_in_air\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_in_air\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_on_floor\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_on_floor\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_on_floor\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_on_floor\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_on_floor\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\enemy\hornet\vfx_dash_on_floor\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\menu.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\menu_introduce.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\attack.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\1.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\10.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\11.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\12.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\2.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\3.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\4.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\5.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\6.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\7.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\8.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dance\9.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\dead.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\fall.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\idle.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\jump.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\roll.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\run.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\vfx_attack_down.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\vfx_attack_left.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\vfx_attack_right.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\vfx_attack_up.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\vfx_jump.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\player\vfx_land.png" />
+    <Image Include="D:\浏览器Download\空洞武士\resources\ui_heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="D:\浏览器Download\空洞武士\resources\font\IPix.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
