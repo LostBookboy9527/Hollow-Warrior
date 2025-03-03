@@ -45,7 +45,3 @@ main.exe
 ![1741011053392](https://github.com/user-attachments/assets/6e069cb4-a157-489a-9300-5ddaabd3a0c4)
 
 
-
-#### 📜 许可证  
-本项目遵循 MIT 许可证，详情请见 LICENSE 文件。
-
