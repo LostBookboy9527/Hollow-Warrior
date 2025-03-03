@@ -35,6 +35,15 @@ g++ main.cpp -o main.exe -lEasyX
 main.exe
 ```
 #### 📷 游戏截图  
+![1741010640720](https://github.com/user-attachments/assets/f38dcb0a-e3f2-491d-a3d4-5b2be81a6894)
+![1741010681771](https://github.com/user-attachments/assets/53c04fb4-a228-4857-bd9a-c09ed801c178)
+![1741010749792](https://github.com/user-attachments/assets/23977200-89ee-4971-9b9f-31a77f2d511e)
+![1741010863904](https://github.com/user-attachments/assets/88cfed01-2a8d-44f2-a87a-5b35eb37810a)
+![1741010952517](https://github.com/user-attachments/assets/55a4ce64-2bed-44ad-add0-947e13bffc69)
+![1741010995790](https://github.com/user-attachments/assets/5dc28d0c-0eb0-4348-b0d3-0c4eba6f0eb2)
+![1741011024127](https://github.com/user-attachments/assets/5dada63b-85b2-42f2-9369-537c66dcc97c)
+![1741011053392](https://github.com/user-attachments/assets/6e069cb4-a157-489a-9300-5ddaabd3a0c4)
+
 
 
 #### 📜 许可证  
